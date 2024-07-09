@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Data</title>
+     <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <h1>BURN2 Ranger LSD Report:</h1>
+    <div class="container">
+
+     <h3>Date: <span id="date"></span></h3>
+     <p id = "date2"> </p>
+
+     <form method="POST" action="/post-feedback"> 
+     
+      <div class="row">
+          <div class="col-25">
+        <label>Incident Date:</label>
+         </div> <!-- end 25 --> 
+         <div class="col-75">
+        <input type="text" id="Incident-Date" name="Incident-Date" required>
+         </div> <!-- end 75 --> 
+         </div>  <!-- end row --> 
+
+         <div class="row">
+          <div class="col-25">
+        <label>Event Name:</label>
+         </div> <!-- end 25 --> 
+         <div class="col-75">
+        <input type="text" id="Event-Name" name="Event-Name" required>
+         </div> <!-- end 75 --> 
+         </div>  <!-- end row --> 
+
+
+
+
+
+        <!-- old  ********************************** -->
+        <div class="row">
+          <div class="col-25">
+        <label>Your Name:</label>
+         </div> <!-- end 25 --> 
+         <div class="col-75">
+        <input type="text" id="your-name" name="your-name" required>
+         </div> <!-- end 75 --> 
+         </div>  <!-- end row --> 
+
+
+        <div class="row">         
+          <div class="col-25">        
+        <label>Subj Name:</label>
+        </div> <!-- end 25 --> 
+         <div class="col-75">
+        <input type="text" id="subj-name" name="subj-name" required>
+         </div> <!-- end 75 --> 
+         </div>  <!-- end row --> 
+
+         <div class="row">         
+          <div class="col-25">        
+        <label>Subj UUID:</label>
+        </div> <!-- end 25 --> 
+         <div class="col-75">
+        <input type="text" id="subj-uuid" name="subj-uuid" required>
+         </div> <!-- end 75 --> 
+         </div>  <!-- end row --> 
+
+
+         
+        <div class="row">
+          <div class="col-25">       
+          <label>Slurl:</label>
+          </div> <!-- end 25 --> 
+
+          <div class="col-75">
+          <input type="text" id="slurl" name="slurl" required>
+          </div> <!-- end 75 --> 
+        </div>  <!-- end row --> 
+
+         
+        
+         
+        <div class="row">
+          <div class="col-25">        
+          <label>Issue Type:</label>
+          </div> <!-- end 25 --> 
+
+          <div class="col-75">
+            <!--
+          <input type="text" id="issue-type" name="issue-type" required>
+          -->
+          <select id="issue-type" name="issue-type">
+          <option value="" selected disabled hidden>Pick One</option>
+          <option value="Moop">Moop</option>
+          <option value="Griefing">Griefing</option>     
+          <option value="Guidelines">Guidelines</option>  
+          <option value="Other">Other</option>  
+          </select>
+          </div> <!-- end 75 --> 
+        </div>  <!-- end row --> 
+        <br>
+
+
+        <div class="row">
+          <div class="col-25">        
+          <label>Issue Status:</label>
+          </div> <!-- end 25 --> 
+
+          <div class="col-75">
+            <!--
+          <input type="text" id="issue-type" name="issue-type" required>
+          -->
+          <select id="issue-status" name="issue-status">
+          <option value="" selected disabled hidden>Pick One</option>
+          <option value="Open">Open</option>
+          <option value="Closed">Closed</option> 
+          </select>
+          </div> <!-- end 75 --> 
+        </div>  <!-- end row --> 
+
+
+
+
+        <br>
+         <div class="row">
+          <div class="col-25"> 
+          <label>AR Status:<br></label>  
+          </div> <!-- end 25 -->  
+
+        
+          <div class="col-75">  
+          <select id="AR" name="AR">
+          <option value="" selected disabled hidden>AR Filed?</option>
+          <option value="AR:No">No</option>
+          <option value="AR:Yes">Yes</option>       
+          </select>
+          </div> <!-- end 75 --> 
+        </div>  <!-- end row --> 
+         
+
+        <div class="row">
+          <div class="col-25"> 
+          <label>Incident Desc:<br></label>
+          </div> <!-- end 25 --> 
+
+          <div class="col-85">
+          <textarea id="report" name="report"
+                    style="height:200px width:20%"></textarea>
+          </div> <!-- end 75 --> 
+        </div>  <!-- end row --> 
+
+         <br>
+       
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    </div> <!-- end container --> 
+    <a href="/view-feedbacks">View LSD Reports</a>
+
+    <script src="./index.js"> </script>
+   
+</body>
+</html>
+<!--
+Date: ( sort by year, then month, then day ) desc
+Your name:
+Subject's Name:
+Slurl:
+AR filed:
+Issue:
+Descr: ( text box )
+Status: ( open / closed)... open are grouped, then closed
+         set to Open - with Close button on view page
+
+submit page, 
+view page / search ,
+close page w/textbox ( add to json file)
+  -->
