@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="refresh" content="20"> 
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;   
+        background: #333;
+        color: goldenrod;
+      }
+      p {
+         font-size: 20px;
+         color: lime;
+      }      
+    </style>
+  </head>
+<body>
+    <h1>Deep Hole Avatar Tracking ( views EJS )</h1>
+    <h2> TIME:   <p><%= burners.key %></p> </h2>
+    <div id= "tracks"> 
+      <% if (burners) { %>  
+           <h3>Avavtar Limit Data</h3>
+           <p><%- burners.key %></p>       
+      <% };  %>   <!-- end IF -->
+    </div>
+        <p id="count">People:</p>
+   <!--  -->   
+    <script> // reload every 10 sec 
+      let nIntervId;
+      function flashText() {
+        location.reload();
+      };      
+      nIntervId = setInterval(flashText, 10000);     
+    </script> 
+        
+    <script>
+      let socket = io();
+      socket.on('count', function(data){
+        document.getElementById("count").innerText = data.people;
+      });
+    </script>    
+       <!--  -->
+</body>
+</html>
+
+  
