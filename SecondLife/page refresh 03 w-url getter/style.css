@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: #333;
+  color: khaki;
+}
+#staticPart{
+  color: #95c770;
+  text-align: center;
+  font-size: 30px;
+  font-weight:900;
+}
+#t1{
+  color:goldenrod;
+}
+#main{
+  display: grid;
+  grid-template-columns: 30% 60% auto;
+  gap: 10px;  
+}
+#panel{ 
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4C5ydtFef7eZAxkLzY9g4mIjDAR1RCxsXffbKy7TO4qbgJ4ozAAPT_bQwy4MjpGV5oQ");
+  border: 1px solid orange;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+#url{
+  color: goldenrod;
+}
+#e1, #s1{
+  color: pink;
+}
+#s1 {
+  font-weight: bold;
+}
