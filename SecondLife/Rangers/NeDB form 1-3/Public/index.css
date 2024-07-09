@@ -1,0 +1,112 @@
+/* make responsive & flex */
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+body{
+  background: #333;
+  color: orange;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+.container {
+  border-radius: 5px;
+  background-color: #a6aaa2;
+  color: black;
+  padding: 10px;
+}
+#date{
+  background: #333;
+  color: orange;
+  width: 200px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 7px;
+  resize: vertical;
+}
+input[type=submit] {
+    width: 10%;
+    margin-top: 0;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 7px;
+    resize: vertical;
+    background: rgb(36, 245, 36);
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+input[type=submit]:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: rgb(37, 30, 30);
+  transform: translateY(-1px);
+}
+
+  input[type=checkbox] {
+  
+  }
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #333;
+  }
+
+label {
+  padding: 10px 10px 10px 20px;
+  display: inline-block;
+}
+
+
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;  
+}
+
+.col-75 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+#issue-type, #issue-status, #AR {
+  margin-top: 10px;
+}
+select {
+  
+}
