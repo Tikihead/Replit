@@ -1,0 +1,145 @@
+<html>
+  <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/indexMain.css">
+    
+  </head>
+  <body>
+ <div id= "tracks"> 
+      <% if (!stats) { %>  
+           <h3>No Data</h3>          
+      <% };  %>   <!-- end IF -->
+  </div>
+
+<div class="flex-grid-thirds">
+  
+  <div class="col"><b><em class="e1">Deep Hole</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D1.stat %> ><%- stats.D1.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D1.dil %></b> </br> 
+   <b> FPS:       <%- stats.D1.fps     %></b> </br> 
+   <b> AVI Count: <u><%- stats.D1.avatars %></u></b> 
+  </div>
+  
+  <div class="col"><b><em class="e1">Beehive</em></b></br>
+   <b> Status: <i data-color= <%- stats.D2.stat %> ><%- stats.D2.stat %></i> </b> </br> 
+   <b> Dilation:  <%- stats.D2.dil %></b> </br>
+   <b> FPS:       <%- stats.D2.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D2.avatars %></u></b> 
+  </div>
+  
+  <div class="col"><b><em class="e1">Silverfox</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D3.stat %> ><%- stats.D3.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D3.dil %></b> </br> 
+   <b> FPS:       <%- stats.D3.fps      %></b> </br> 
+   <b> AVI count: <u><%- stats.D3.avatars %></u></b> 
+  </div>
+  
+</div>
+
+<div class="flex-grid-thirds">
+  <div class="col"><b><em class="e1">Pandora</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D4.stat %> ><%- stats.D4.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D4.dil %></b> </br>
+   <b> FPS:       <%- stats.D4.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D4.avatars %></u></b> 
+  </div>
+  
+   <div class="col"><b><em class="e1">HoneyBeeTopia</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D5.stat %> ><%- stats.D5.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D5.dil %></b> </br>
+   <b> FPS:       <%- stats.D5.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D5.avatars %></u></b> 
+  </div>
+  
+   <div class="col"><b><em class="e1">Unnicornia</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D6.stat %> ><%- stats.D6.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D6.dil %></b> </br>
+   <b> FPS:       <%- stats.D6.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D6.avatars %></u></b> 
+  </div>
+  
+</div>
+<div class="flex-grid-thirds">
+  <div class="col"><b><em class="e1">Pig Wallow</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D7.stat %> ><%- stats.D7.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D7.dil %></b> </br>
+   <b> FPS:       <%- stats.D7.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D7.avatars %></u></b> 
+  </div>
+  
+  <div class="col"><b><em class="e1">Pawsom</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D8.stat %> ><%- stats.D8.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D8.dil %></b> </br>
+   <b> FPS:       <%- stats.D8.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D8.avatars %></u></b> 
+  </div>
+  
+   <div class="col"><b><em class="e1">Dragomweyr</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D9.stat %> ><%- stats.D9.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D9.dil %></b> </br>
+   <b> FPS:       <%- stats.D9.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D9.avatars %></u></b> 
+  </div>
+</div>
+<div class="flex-grid-thirds">
+  <div class="col"><b><em class="e1">CATopia</em></b></br>
+   <b> Status:   <i data-color= <%- stats.D10.stat %> ><%- stats.D10.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D10.dil %></b> </br>
+   <b> FPS:       <%- stats.D10.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D10.avatars %></u></b> 
+  </div>
+  
+   <div class="col"><b><em class="e1">Phoenix Combustus</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D11.stat %> ><%- stats.D11.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D11.dil %></b> </br>
+   <b> FPS:       <%- stats.D11.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D11.avatars %></u></b> 
+  </div>
+  
+ <div class="col"><b><em class="e1">Menagerie</em></b></br>
+   <b> Status:    <i data-color= <%- stats.D12.stat %> ><%- stats.D12.stat %></i></b> </br> 
+   <b> Dilation:  <%- stats.D12.dil %></b> </br>
+   <b> FPS:       <%- stats.D12.fps     %></b> </br> 
+   <b> AVI count: <u><%- stats.D12.avatars %></u></b> 
+  </div>
+</div>
+<div id="d1">
+  <img src = "https://res.cloudinary.com/xiija/image/upload/v1695651973/qr2.png" />
+</div>
+        
+   <p id="width">Screen: </p>     
+    <script>
+      document.getElementById("width").innerHTML =
+      "Screen width is " + screen.width;
+   </script>
+        
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {  
+
+    const bs = document.getElementsByTagName("i");
+    for (b of bs) {
+      let eAttr = b.getAttribute("data-color");
+      if( eAttr === "up") {
+         b.style.color = "lime";
+      }
+      if( eAttr === "down") {
+         b.style.color = "red";
+      } 
+   }
+ });    
+</script>
+        
+  <!--  -->   
+    <script> // reload every 10 sec 
+     // let nIntervId;
+      function flashText() {
+        location.reload();
+      };      
+     let nIntervId = setInterval(flashText, 10000);     
+    </script> 
+        
+   
+       <!--  -->       
+  </body>
+</html>    
+    
